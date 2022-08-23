@@ -1,14 +1,14 @@
-.container{
-    background-color: black;
-    width: 0;
-}
-
 .App-header {
-    background-color: #282c34;
+    background-color: black;
     display: flex;
     flex-direction: column;
     align-items: stretch;
-    justify-content: flex-start  !important;
-    font-size: 20px;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
     color: white;
+    min-height: 0;
+}
+
+.container {
+    background-color: blue;
 }
