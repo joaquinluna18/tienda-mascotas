@@ -4,6 +4,8 @@ import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import { SiDatadog} from "react-icons/si";
 import './Navbar.scss';
+import CardWiget from './CartWidget';
+
 
 
 function BasicExample() {
@@ -27,6 +29,7 @@ function BasicExample() {
             </NavDropdown>
           </Nav>
         </Navbar.Collapse>
+        <CardWiget href="25"></CardWiget>
       </Container>
     </Navbar>
   );
