@@ -29,7 +29,7 @@ function BasicExample() {
             </NavDropdown>
           </Nav>
         </Navbar.Collapse>
-        <CardWiget href="25"></CardWiget>
+        <CardWiget></CardWiget>
       </Container>
     </Navbar>
   );

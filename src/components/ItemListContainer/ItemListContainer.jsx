@@ -1,13 +1,15 @@
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
 import './ItemListContainer.scss';
+import Hola from './Hola/Hola';
 
-
- function BasicExample() {
+ function ItemListContainer() {
        return (
             <Card style={{ width: '18rem' }}>
               <Card.Body>
-                <Card.Title>Titulo</Card.Title>
+                <Card.Title>
+                <Hola></Hola>
+                  </Card.Title>
                 <Card.Text> 
                   Informacion del producto
                 </Card.Text>
@@ -16,6 +18,7 @@ import './ItemListContainer.scss';
             </Card>
           );
         }
+
+ export default ItemListContainer;
         
-        export default BasicExample;
 
