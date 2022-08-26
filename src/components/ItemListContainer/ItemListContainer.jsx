@@ -5,7 +5,7 @@ import Hola from './Hola/Hola';
 
  function ItemListContainer() {
        return (
-            <Card style={{ width: '18rem' }}>
+            <Card >
               <Card.Body>
                 <Card.Title>
                 <Hola></Hola>
