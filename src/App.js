@@ -4,6 +4,7 @@ import ItemListContainer from './components/ItemListContainer/ItemListContainer'
 import { ItemCount } from './components/ItemCount/ItemCount';
 import { useState } from 'react';
 import {Carrito} from './components/Carrito/Carrito';
+import ItemDetail from './components/ItemDetail/ItemDetail';
 
 function App() {
 
@@ -23,6 +24,7 @@ function App() {
       <header className="App-header">
         <Navbar></Navbar>
         <ItemListContainer></ItemListContainer>
+        <ItemDetail></ItemDetail>
         <ItemCount stock={5} initial={1} addOn={agregar}/>
         <Carrito numeroCarrito={numeroProductos}/>
       </header>

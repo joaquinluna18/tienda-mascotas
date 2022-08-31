@@ -11,7 +11,7 @@ export const ItemCount = ({stock, initial, addOn}) => {
     }
 
     const disminuir = () =>{
-        if(contador>0){
+        if(contador>1){
             setContador(contador - 1)
         } 
     }
