@@ -5,9 +5,12 @@ const Item = ({data}) => {
     return(
     <div>
         <div className="product" key={data.title}>
-           <h1>{data.title}</h1>
+           <h1 className="titulo">{data.title}</h1>
+            <p>{data.descripcion}</p>
             <img src={data.img} alt="" className="imagen"/>
-            <h2>{data.price}</h2>
+            <hr></hr>
+            <h3>{data.price}</h3>
+            <button className="ver-mas"> <b>Comprar</b> </button>
         </div>
     </div>
     )

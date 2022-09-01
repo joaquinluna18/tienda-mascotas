@@ -1,14 +1,13 @@
 .grid-product{
    background-color: rgb(255, 0, 242);
    display: grid;
-   grid-template-columns: 350px 350px 350px;
-   grid-template-rows: 400px 400px;
+   grid-template-columns: 180px 180px 180px 180px 180px;
+   grid-template-rows: 500px 500px 500px;
    justify-items: center;
    align-items: center;
    padding-left: 8%;
     padding-right: 8%;
    grid-column-gap: 1%;
-   grid-row-gap: 1%;
    padding: 1%;
    margin: 1%;
    justify-content: space-around;
