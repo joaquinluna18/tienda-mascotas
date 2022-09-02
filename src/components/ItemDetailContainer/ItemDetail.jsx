@@ -14,20 +14,29 @@ const ItemDetail  =() => {
         })
     },[])
     console.log(data)
+    
         return(
-            <div className="item-container">
-                <h1>Item detail container</h1>
+            
+                <div className="item-container">
+                <h1>Detalle de producto</h1>
+                <hr></hr>
                 {
                     loading ? <h2>Cargando...</h2>
                     :
                     <div className="item-detail">
-                         <img src={data.img} alt=""  />
-                         <h2>{data.title}</h2>
-                         <h3>{data.price}</h3>
+                        <div >
+                        <img src={data.img} alt="" className="foto" />
+                        <h4 className="kilos-item-detail">{data.descripcion}</h4>
+                        </div>
+                        <div>
+                        <h2>{data.title}</h2>
+                        <p className="informacion">{data.info}</p>  
+                        <h3 className="precio-item-detail">{data.price}</h3>
+                        </div>
                     </div>
                 }
 
-            </div>
+            </div> 
         )
 }
 export default ItemDetail;

@@ -10,7 +10,7 @@ const Item = ({data}) => {
             <img src={data.img} alt="" className="imagen"/>
             <hr></hr>
             <h3>{data.price}</h3>
-            <button className="ver-mas"> <b>Comprar</b> </button>
+            <button className="verMas"> <b>Comprar</b> </button>
         </div>
     </div>
     )

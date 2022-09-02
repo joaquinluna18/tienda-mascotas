@@ -4,7 +4,7 @@ import ItemListContainer from './components/ItemListContainer/ItemListContainer'
 import { ItemCount } from './components/ItemCount/ItemCount';
 import { useState } from 'react';
 import {Carrito} from './components/Carrito/Carrito';
-import ItemDetail from './components/ItemDetail/ItemDetail';
+import ItemDetail from './components/ItemDetailContainer/ItemDetail';
 
 function App() {
 
