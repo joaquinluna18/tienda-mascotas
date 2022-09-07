@@ -14,7 +14,7 @@ import gati from './imagenes/gati.jpg';
 import sobreswhiskas from './imagenes/whiskasx12.jpg';
 import whiskas from './imagenes/whiskasadult.jpg';
 
-const productos =[
+export const array =[
     {id:1,
      title:"Ken l",
      info:"La selección de un alimento adecuado para tu mascota es muy importante para garantizar su crecimiento, desarrollo y salud. Con esta opción de Ken-L Ration podrás cubrir las necesidades nutricionales y energéticas de tu perro. Tu mascota siempre saludable. Ellos son parte de la familia y nos regalan su compañía y su cariño. Para que se mantengan sanos y fuertes, una alimentación balanceada es esencial. Brindale a tu perro los nutrientes que necesita para que pueda correr, saltar y jugar todo el día.",
@@ -124,11 +124,3 @@ const productos =[
 
 
 ]
-
-const getFetch = new Promise((resolve, reject ) =>{
-    setTimeout(()=>{
-        resolve(productos)
-        reject(err => console.log(err))},
-        3000)
-    })
-export default getFetch

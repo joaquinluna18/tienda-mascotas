@@ -17,12 +17,12 @@ export const ItemCount = ({stock, initial, addOn}) => {
     }
 
     return(
-        <div class="ItemCount">
+        <div className="ItemCount">
             <p>Productos: {contador}</p>
-            <button class="bttn" onClick={incrementar}>  +  </button>
-            <button class="bttn" onClick={disminuir}>  -  </button>
+            <button className="bttn" onClick={incrementar}>  +  </button>
+            <button className="bttn" onClick={disminuir}>  -  </button>
             <br></br>
-            <button class="bttn" onClick={()=>(addOn(contador))}> Agregar </button>
+            <button className="bttn" onClick={()=>(addOn(contador))}> Agregar </button>
 
         </div>
     )

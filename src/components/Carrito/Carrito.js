@@ -3,7 +3,7 @@ import { BsFillCartPlusFill } from "react-icons/bs";
 
 export const Carrito = ({numeroCarrito}) => {
     return(
-        <div class="Carrito">
+        <div className="Carrito">
             Carrito: 
             <span> { numeroCarrito}</span> 
             <BsFillCartPlusFill class="Icon"></BsFillCartPlusFill>

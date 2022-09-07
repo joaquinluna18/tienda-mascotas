@@ -1,19 +1,18 @@
 import React from "react";
 import './Item.scss'
 
-const Item = ({data}) => {
+export const Item = ({title, descripcion, price, img }) => {
     return(
-    <div>
-        <div className="product" key={data.title}>
-           <h1 className="titulo">{data.title}</h1>
-            <p>{data.descripcion}</p>
-            <img src={data.img} alt="" className="imagen"/>
+    <div >
+        <div className="product" key={title}>
+           <h1 className="titulo">{title}</h1>
+            <p>{descripcion}</p>
+            <img src={img} alt="" className="imagen"/>
             <hr></hr>
-            <h3>{data.price}</h3>
+            <h3>{price}</h3>
             <button className="verMas"> <b>Comprar</b> </button>
         </div>
     </div>
     )
 }
-
-export default Item;
+export default Item

@@ -1,10 +1,10 @@
 import './App.css';
 import Navbar from './components/Navbar/Navbar';
-import ItemListContainer from './components/ItemListContainer/ItemListContainer';
+import { ItemListContainer } from './components/ItemListContainer/ItemListContainer';
 import { ItemCount } from './components/ItemCount/ItemCount';
 import { useState } from 'react';
 import {Carrito} from './components/Carrito/Carrito';
-import ItemDetail from './components/ItemDetailContainer/ItemDetail';
+import ItemDetail from './components/ItemDetailContainer/ItemDetailContainer';
 
 function App() {
 
@@ -23,7 +23,7 @@ function App() {
     <div className="App">
       <header className="App-header">
         <Navbar></Navbar>
-        <ItemListContainer></ItemListContainer>
+        <ItemListContainer greeting ={"msj desde js"}/>
         <ItemDetail></ItemDetail>
         <ItemCount stock={5} initial={1} addOn={agregar}/>
         <Carrito numeroCarrito={numeroProductos}/>

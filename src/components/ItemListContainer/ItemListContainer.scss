@@ -8,3 +8,18 @@
   
 }
 
+.grid-product{
+   background-color: rgb(8 59 67);
+   display: grid;
+   grid-template-columns: 170px 170px 170px 170px 170px;
+   grid-template-rows: 450px 450px 450px;
+   justify-items: center;
+   align-items: center;
+   padding-left: 8%;
+    padding-right: 8%;
+   grid-column-gap: 1%;
+   padding: 1%;
+   margin: 1%;
+   justify-content: space-around;
+}
+
