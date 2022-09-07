@@ -4,7 +4,8 @@ import { ItemListContainer } from './components/ItemListContainer/ItemListContai
 import { ItemCount } from './components/ItemCount/ItemCount';
 import { useState } from 'react';
 import {Carrito} from './components/Carrito/Carrito';
-import ItemDetail from './components/ItemDetailContainer/ItemDetailContainer';
+import ItemDetailContainer from './components/ItemDetailContainer/ItemDetailContainer';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
 
 function App() {
 
@@ -20,15 +21,20 @@ function App() {
   console.log('numerosProductos',numeroProductos);
 
   return (
-    <div className="App">
-      <header className="App-header">
-        <Navbar></Navbar>
-        <ItemListContainer greeting ={"msj desde js"}/>
-        <ItemDetail></ItemDetail>
-        <ItemCount stock={5} initial={1} addOn={agregar}/>
-        <Carrito numeroCarrito={numeroProductos}/>
-      </header>
-    </div>
+   <>
+   <BrowserRouter>
+      <Navbar/>
+         <Routes>
+            <Route path='/' element={<ItemListContainer/>}/>
+            <Route path='/category/:categoryId' element={<ItemListContainer/>}/>
+            <Route path='/item/:itemId' element={<ItemDetailContainer/>}/>
+        </Routes>
+   </BrowserRouter>
+   </>
   );}
 
 export default App;
+/*
+<ItemCount stock={5} initial={1} addOn={agregar}/>
+<Carrito numeroCarrito={numeroProductos}/>
+*/

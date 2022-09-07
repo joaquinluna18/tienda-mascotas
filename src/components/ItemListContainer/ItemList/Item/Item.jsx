@@ -1,7 +1,8 @@
 import React from "react";
+import { Link } from 'react-router-dom';
 import './Item.scss'
 
-export const Item = ({title, descripcion, price, img }) => {
+export const Item = ({title, descripcion, price, img, id }) => {
     return(
     <div >
         <div className="product" key={title}>
@@ -10,7 +11,11 @@ export const Item = ({title, descripcion, price, img }) => {
             <img src={img} alt="" className="imagen"/>
             <hr></hr>
             <h3>{price}</h3>
-            <button className="verMas"> <b>Comprar</b> </button>
+            <button className="verMas">
+                <Link to={`/item/${id}`}>
+                    Ver mas
+                </Link>
+             </button>
         </div>
     </div>
     )
