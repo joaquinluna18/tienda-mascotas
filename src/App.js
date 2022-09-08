@@ -5,7 +5,6 @@ import { ItemCount } from './components/ItemCount/ItemCount';
 import { useState } from 'react';
 import {Carrito} from './components/Carrito/Carrito';
 import ItemDetailContainer from './components/ItemDetailContainer/ItemDetailContainer';
-import { BrowserRouter, Route, Routes } from 'react-router-dom';
 
 function App() {
 
@@ -21,16 +20,14 @@ function App() {
   console.log('numerosProductos',numeroProductos);
 
   return (
-   <>
-   <BrowserRouter>
+   <div className='app-header'>
       <Navbar/>
-         <Routes>
-            <Route path='/' element={<ItemListContainer/>}/>
-            <Route path='/category/:categoryId' element={<ItemListContainer/>}/>
-            <Route path='/item/:itemId' element={<ItemDetailContainer/>}/>
-        </Routes>
-   </BrowserRouter>
-   </>
+      <ItemListContainer/>
+      <ItemDetailContainer/>
+      <ItemCount stock={5} initial={1} addOn={agregar}/>
+      <Carrito numeroCarrito={numeroProductos}/> 
+    
+   </div>
   );}
 
 export default App;

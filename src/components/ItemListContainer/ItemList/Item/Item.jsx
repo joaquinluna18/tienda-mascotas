@@ -1,5 +1,4 @@
 import React from "react";
-import { Link } from 'react-router-dom';
 import './Item.scss'
 
 export const Item = ({title, descripcion, price, img, id }) => {
@@ -12,9 +11,7 @@ export const Item = ({title, descripcion, price, img, id }) => {
             <hr></hr>
             <h3>{price}</h3>
             <button className="verMas">
-                <Link to={`/item/${id}`}>
                     Ver mas
-                </Link>
              </button>
         </div>
     </div>

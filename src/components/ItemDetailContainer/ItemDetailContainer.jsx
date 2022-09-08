@@ -1,8 +1,10 @@
+import React from "react";
 import { useState,useEffect } from "react";
 import { getArray } from "../ItemListContainer/helper/getArray";
 import { array } from "../../data/data";
 import {ItemDetail} from './ItemDetail';
 import { useParams } from "react-router-dom";
+import './ItemDetail.scss';
 
 
 export const ItemDetailContainer=()=>{
