@@ -5,10 +5,9 @@ export const ItemList =({items}) =>{
     return(
         <> 
         {
-            items.map ((item) => <Item key={item.id} {...item}/>
-            )
+            items.map ((item) => <Item key={item.id} {...item}/>)
         }
         </>
     )
 }
-export default ItemList
+export default ItemList;

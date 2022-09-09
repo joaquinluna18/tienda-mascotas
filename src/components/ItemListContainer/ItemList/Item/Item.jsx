@@ -1,14 +1,14 @@
 import React from "react";
-import './Item.scss'
+import './Item.scss';
 
-export const Item = ({title, descripcion, price, img, id }) => {
+export const Item = ({title, descripcion, price, img,  }) => {
     return(
     <div >
         <div className="product" key={title}>
            <h1 className="titulo">{title}</h1>
             <p>{descripcion}</p>
             <img src={img} alt="" className="imagen"/>
-            <hr></hr>
+                <hr />
             <h3>{price}</h3>
             <button className="verMas">
                     Ver mas
@@ -17,4 +17,4 @@ export const Item = ({title, descripcion, price, img, id }) => {
     </div>
     )
 }
-export default Item
+export default Item;

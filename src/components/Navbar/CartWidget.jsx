@@ -1,7 +1,7 @@
 import { BsFillCartCheckFill } from "react-icons/bs";
 
 
-const CardWiget = () => {
+export const CardWiget = () => {
     
         return(
             <BsFillCartCheckFill></BsFillCartCheckFill>
@@ -10,5 +10,5 @@ const CardWiget = () => {
    
 }
 
-export default CardWiget
+export default CardWiget;
 

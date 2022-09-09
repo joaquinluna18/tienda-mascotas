@@ -1,22 +1,16 @@
-import Container from 'react-bootstrap/Container';
-import Nav from 'react-bootstrap/Nav';
-import Navbar from 'react-bootstrap/Navbar';
-import NavDropdown from 'react-bootstrap/NavDropdown';
-import { SiDatadog} from "react-icons/si";
+import React from 'react';
+import { Navbar, Container, Nav, NavDropdown  } from 'react-bootstrap';
+import { SiDatadog } from "react-icons/si";
 import './Navbar.scss';
-import CardWiget from './CartWidget';
+import { CardWiget } from './CartWidget';
 
-
-
-function BasicExample() {
+export const NavBar = () => {
   return (
-    <Navbar bg="dark" variant="dark">
+    <Navbar bg="dark" variant="dark" className='App-header'>
       <Container>
         <Navbar.Brand >
-          
           <SiDatadog></SiDatadog>
           Koda Pet Shop
-        
           </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
@@ -40,4 +34,4 @@ function BasicExample() {
   );
 }
 
-export default BasicExample;
+export default NavBar;

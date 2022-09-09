@@ -1,37 +1,27 @@
+import React from 'react';
+import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
-import Navbar from './components/Navbar/Navbar';
+import { NavBar } from './components/Navbar/Navbar';
 import { ItemListContainer } from './components/ItemListContainer/ItemListContainer';
 import { ItemCount } from './components/ItemCount/ItemCount';
-import { useState } from 'react';
-import {Carrito} from './components/Carrito/Carrito';
-import ItemDetailContainer from './components/ItemDetailContainer/ItemDetailContainer';
+import {ItemDetailContainer} from './components/ItemDetailContainer/ItemDetailContainer';
 
 function App() {
 
-  
-  const [numeroProductos, setNumeroProductos] = useState(0);
-
-  const agregar = (productos) => {
-      console.log('funcion agregar', productos)
-      setNumeroProductos(productos);
-     
+  const onAdd =(contador)=>{
+      alert (`Agregaste ${contador} al carrito `)
   }
 
-  console.log('numerosProductos',numeroProductos);
 
   return (
-   <div className='app-header'>
-      <Navbar/>
-      <ItemListContainer/>
+   < >
+      <NavBar/>
+      <ItemListContainer />
       <ItemDetailContainer/>
-      <ItemCount stock={5} initial={1} addOn={agregar}/>
-      <Carrito numeroCarrito={numeroProductos}/> 
+      <ItemCount stock={5} initial={1} onAdd={onAdd}/>
+      
     
-   </div>
+   </>
   );}
 
 export default App;
-/*
-<ItemCount stock={5} initial={1} addOn={agregar}/>
-<Carrito numeroCarrito={numeroProductos}/>
-*/
