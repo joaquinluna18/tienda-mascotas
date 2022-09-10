@@ -3,14 +3,17 @@ import { Navbar, Container, Nav, NavDropdown  } from 'react-bootstrap';
 import { SiDatadog } from "react-icons/si";
 import './Navbar.scss';
 import { CardWiget } from './CartWidget';
+import {Link} from 'react-router-dom';
 
 export const NavBar = () => {
   return (
     <Navbar bg="dark" variant="dark" className='App-header'>
       <Container>
-        <Navbar.Brand >
-          <SiDatadog></SiDatadog>
-          Koda Pet Shop
+        <Navbar.Brand>
+          <Link to={"/"} id="brand">
+            <SiDatadog></SiDatadog>
+               Koda Pet Shop
+          </Link>
           </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
@@ -18,13 +21,19 @@ export const NavBar = () => {
             <Nav.Link href="#home">Home</Nav.Link>
             <Nav.Link href="#link">Contacto</Nav.Link>
             <NavDropdown title="Productos" id="basic-nav-dropdown">
-              <NavDropdown.Item href="#action/3.1">
+              <NavDropdown.Item >
+                <Link to={"/category/perro"}>
                 Perros
+                </Link>
                 </NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.2">
+              <NavDropdown.Item >
+                <Link to={"/category/gato"}>
                 Gatos
+                </Link>
               </NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.3">Otros</NavDropdown.Item>
+              <NavDropdown.Item >
+                Otros
+                </NavDropdown.Item>
             </NavDropdown>
           </Nav>
         </Navbar.Collapse>
