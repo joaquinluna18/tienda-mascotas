@@ -12,7 +12,7 @@ export const Item = ({title, descripcion, price, img,id  }) => {
                 <hr />
             <h3>{price}</h3>
             <button  className="verMas">
-                <Link to={`/item/${id}`}>
+                <Link className="verMas" to={`/item/${id}`}>
                 Ver mas
                 </Link>
              </button>
