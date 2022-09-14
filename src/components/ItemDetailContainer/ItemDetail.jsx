@@ -1,9 +1,13 @@
 import React from "react";
 import './ItemDetail.scss';
+import { ItemCount } from "../ItemCount/ItemCount";
 
 export const ItemDetail = ({title, descripcion, price, img, info, id }) =>{
 
-    
+    const onAdd =(contador)=>{
+        alert (`Agregaste ${contador} al carrito `)
+    }
+
 
     return(
         <div className="item-detail">
@@ -16,7 +20,9 @@ export const ItemDetail = ({title, descripcion, price, img, info, id }) =>{
                         <hr />
                         <p className="informacion">{info}</p>  
                         <h3 className="precio-item-detail">{price}</h3>
+                        <ItemCount stock={5} initial={1} onAdd={onAdd}/>
                         </div>
+                        
         </div>
     )
 }

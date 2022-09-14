@@ -17,3 +17,28 @@
     color: white;
     text-decoration: none;
 }
+
+.navbar-expand .navbar-nav .dropdown-menu {
+    position: absolute;
+    background-color:  rgb(5 36 41);
+    color: white;
+}
+
+.dropdown-item {
+    display: block;
+    width: 100%;
+    padding: var(--bs-dropdown-item-padding-y) var(--bs-dropdown-item-padding-x);
+    clear: both;
+    font-weight: 400;
+    color: #eef7ff;
+    text-align: inherit;
+    text-decoration: none;
+    white-space: nowrap;
+    background-color: transparent;
+    border: 0;
+}
+
+a {
+    color: #d4dae3;
+    text-decoration: underline;
+}

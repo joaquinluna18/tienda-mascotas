@@ -1,15 +1,16 @@
 .ItemCount{
     background-color: rgb(4, 122, 141);
     color: white;
-    margin-left: 8%;
-    margin-right: 8%;
+    margin: 1%;
+    padding: 1%;
     border-radius: 10%;
     width: 200px;
-    height: 180px;
+    height: 150px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-left: 70%;
 }
 
 .Count{
