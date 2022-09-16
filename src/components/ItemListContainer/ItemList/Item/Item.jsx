@@ -4,7 +4,8 @@ import { Link } from "react-router-dom";
 
 export const Item = ({title, descripcion, price, img,id  }) => {
     return(
-    <div >
+    <div  >
+        <Link className="verMas" to={`/item/${id}`}></Link>
         <div className="product" key={title}>
            <h1 className="titulo">{title}</h1>
             <p>{descripcion}</p>
@@ -17,6 +18,7 @@ export const Item = ({title, descripcion, price, img,id  }) => {
                 </Link>
              </button>
         </div>
+        
     </div>
     )
 }

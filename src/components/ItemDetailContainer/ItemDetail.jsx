@@ -1,11 +1,16 @@
 import React from "react";
 import './ItemDetail.scss';
 import { ItemCount } from "../ItemCount/ItemCount";
+import { useContext } from "react";
+import { CartContext } from "../../context/CartContext";
 
-export const ItemDetail = ({title, descripcion, price, img, info, id }) =>{
+export const ItemDetail = ({title, descripcion, price, img, info, item }) =>{
+
+    const {addProduct} = useContext(CartContext)
 
     const onAdd =(contador)=>{
-        alert (`Agregaste ${contador} al carrito `)
+       const newProduct={...item, quantity:contador}
+       addProduct(newProduct)
     }
 
 

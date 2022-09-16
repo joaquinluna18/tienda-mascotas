@@ -128,16 +128,14 @@ export const array =[
         category: "gato",  
        },
        {id:15,
-        title:"Whisas ",
+        title:"Whiskas ",
         info:"Alimento seco con nutriendes para el crecimiento y desarrollo de tu gatito, en pequeños trozos para que coma con facilidad, con vitamina E y taurina para evitar la oxidación de sus células, con calcio para el desarrollo de dientes y huesos sanos y fuertes.",
         descripcion:"1kg Gato",
         price:"$770",
         img:[whiskas],   
         category: "gato",
        },
-       
-
-
+ 
 ]
 
 export default array;
