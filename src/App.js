@@ -13,7 +13,7 @@ function App() {
   return (
    < >
     (
-      <CartProvider>
+    <CartProvider>
       <BrowserRouter>
          <NavBar/>
           <Routes>

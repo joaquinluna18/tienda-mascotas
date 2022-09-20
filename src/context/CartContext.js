@@ -38,8 +38,8 @@ export const CartProvider = ({children}) =>{
 
     const removeProduct = (idProduct)=>{
         const copyArray = [...productCartList];
-        const newArray = copyArray.filte(elm=>elm.id !==idProduct );
-        setProductCartList(newArray)
+        const newArray = copyArray.filter(elm=>elm.id !== idProduct);
+        setProductCartList(newArray);
     }
 
     return(

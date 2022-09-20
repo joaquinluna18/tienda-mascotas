@@ -1,27 +1,47 @@
 .product-cartItem{
-    background-color: rgb(201, 174, 24);
-    width: 240px;
+    background-color: rgb(9, 220, 248);
+    width: 200px;
     display: flex;
-    height: 415px;
+    height: 380px;
     margin: 1%;
     padding: 1%;
     flex-direction: column;
     align-items: center;
     color: black;
+    border-radius: 4%;
+ }
+ .box{
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    align-content: center;
  }
  
- .titulo-cartItem{
+ .cartItem-titulo{
     font-size: 26px;
+    color: rgb(4, 5, 49)
  }
- .kilos{
-    font-size: 16px;
+
+ .bttn-eliminar{
+   color:aliceblue;
+   background-color: red;
+   width: auto;
+   height: auto;
+   border-radius: 4%;
+   border-color:rgb(175, 18, 18);
  }
- 
  
  .imagen{
     width: 150px;
     height: 200px;
  }
- .precio{
-    font-size: 25px;
+ .cartItem-price{
+   color:rgb(4, 5, 49)
+ }
+
+ .cartItem-quantity{
+   color: rgb(4, 5, 49);
+   font-size: 20px;
  }

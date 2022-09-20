@@ -8,12 +8,16 @@ export const CartContainer = () =>{
     const {productCartList} = useContext(CartContext);
 
     return(
-        <div className="cart-Container">
-           <p>CartContainer</p> 
+        
+        <div>
+            <h1 className="cartContainer-titulo">PRODUCTOS SELECCIONADOS</h1>
+            <div className="cart-Container">
            {
             productCartList.map((item) => <CartItem key={item.id} {...item}/>
             )
            }
         </div>
+        </div>
+    
     )
 }
