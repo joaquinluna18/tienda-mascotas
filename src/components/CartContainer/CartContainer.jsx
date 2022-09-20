@@ -5,7 +5,7 @@ import './CartContainer.scss';
 
 
 export const CartContainer = () =>{
-    const {productCartList} = useContext(CartContext);
+    const {productCartList, clearProductCartList} = useContext(CartContext);
 
     return(
         
@@ -16,7 +16,10 @@ export const CartContainer = () =>{
             productCartList.map((item) => <CartItem key={item.id} {...item} item={item}/>
             ) 
            }
+           <hr />
+        <button className="bttn-clear" onClick={clearProductCartList}>VACIAR CARRITO</button>
         </div>
+        
         </div>
     
     )
