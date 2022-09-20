@@ -13,8 +13,8 @@ export const CartContainer = () =>{
             <h1 className="cartContainer-titulo">PRODUCTOS SELECCIONADOS</h1>
             <div className="cart-Container">
            {
-            productCartList.map((item) => <CartItem key={item.id} {...item}/>
-            )
+            productCartList.map((item) => <CartItem key={item.id} {...item} item={item}/>
+            ) 
            }
         </div>
         </div>
