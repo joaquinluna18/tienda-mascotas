@@ -6,8 +6,10 @@ export const CartContext = createContext();
 export const CartProvider = ({children}) =>{
 
     const [productCartList, setProductCartList] = useState([]);
+  
 
     const isInCart = (id) =>{
+
         const elmIndex = productCartList.findIndex(product=> product.id === id);
         if(elmIndex>=0){
             return {exists: true, index:elmIndex}
@@ -46,8 +48,13 @@ export const CartProvider = ({children}) =>{
         setProductCartList([])
     }
 
+    const getTotalPoducts =()=>{
+        const totalProducts = productCartList.reduce((acc, item)=> acc + item.quantity,0)
+       return totalProducts;
+    }
+
     return(
-        <CartContext.Provider value={{productCartList, addProduct, removeProduct, clearProductCartList}}>
+        <CartContext.Provider value={{productCartList, addProduct, removeProduct, clearProductCartList, getTotalPoducts}}>
             {children}
         </CartContext.Provider>
     )

@@ -2,7 +2,7 @@
     background-color: rgb(9, 220, 248);
     width: 200px;
     display: flex;
-    height: 380px;
+    height: 400px;
     margin: 1%;
     padding: 1%;
     flex-direction: column;
@@ -38,10 +38,17 @@
     height: 200px;
  }
  .cartItem-price{
-   color:rgb(4, 5, 49)
+   color:rgb(4, 5, 49);
+   font-size: 20px;
  }
 
  .cartItem-quantity{
    color: rgb(4, 5, 49);
    font-size: 20px;
+ }
+ 
+ .cartItem-totalPrice{
+   color: rgb(6, 8, 29);
+   font-size: 25px;
+   background-color: rgb(219, 215, 6);
  }
