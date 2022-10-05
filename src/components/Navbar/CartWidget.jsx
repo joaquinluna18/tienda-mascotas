@@ -2,6 +2,7 @@ import { useContext } from "react";
 import { BsFillCartCheckFill } from "react-icons/bs";
 import { Link } from "react-router-dom";
 import { CartContext } from "../../context/CartContext";
+import React, { Component }  from 'react';
 
 
 export const CardWiget = () => {
@@ -10,12 +11,9 @@ export const CardWiget = () => {
 
         return(
             <Link to="/cart">
-           < div>
-           
+            <div>
                 <BsFillCartCheckFill>
-                    
                 </BsFillCartCheckFill>
-            
              <span className="contador-carrito">+ 
              {getTotalPoducts()}
            </span> 
@@ -23,7 +21,6 @@ export const CardWiget = () => {
          </Link>  
           )
 
-   
 }
 
 export default CardWiget;
