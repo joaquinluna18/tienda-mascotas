@@ -22,7 +22,7 @@ function App() {
               <Route path='/category/:categoryId' element={<ItemListContainer/>} />
               <Route path='/cart' element={<CartContainer/>} />
               <Route path='/item/:itemId' element={<ItemDetailContainer/>} />
-              <Route path='/firebase' element={Firebase} />
+              <Route path='/firebase' element={<Firebase/>} />
           </Routes>
       </BrowserRouter>
       </CartProvider>
